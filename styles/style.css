@@ -1,0 +1,109 @@
+/* Google Fonts - Open Sans */
+/* font-family: "Open Sans", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 
+Comandos Flex:
+display
+justify-content
+align-items
+flex-grow - Permite cambiar el ancho de la caja de forma flexible+
+flex-direction
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Open Sans", serif;
+    background-color: #6eceb2;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-column: 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.grid-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+
+    border: 1px solid red;
+}
+
+.grid-area div {
+    padding: 20px;
+}
+
+.grid-area div p {
+    padding-top: 20px;
+}
+.grid-area img {
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+footer img{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.footer-contacto div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+.footer-contacto div img {
+    padding-right: 20px;
+}
+.footer-contacto img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
