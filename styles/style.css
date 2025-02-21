@@ -24,7 +24,7 @@ li {
     list-style: none;
 }
 
-a {
+.navegacion a {
     text-decoration: none;
     color: white;
 }
@@ -45,7 +45,7 @@ a {
     border: solid 2px gray;
 }
 
-.navbar ul {
+.navegacion ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -75,12 +75,20 @@ a {
 .grid-area div p {
     padding-top: 20px;
 }
+
 .grid-area img {
     height: 500px;
     width: 500px;
     border-radius: 10px;
 }
 
+.grid-carousel {
+    padding: 10px;
+}
+
+.grid-carousel img{
+    height: 600px;
+}
 .grid-tarjetas {
     background-color: #FFE8D6;
     display: flex;
@@ -94,7 +102,7 @@ a {
 .grid-tarjetas div {
     background-color: #D7CCC8;
     border: solid grey;
-    height: 400px;
+    height: 420px;
     width: 350px;
     margin: 20px;
 }
@@ -111,12 +119,17 @@ a {
 
 .grid-tarjetas div p {
     text-align: justify;
-    margin-left: 10px;
+    margin: 0px 0px 0px 10px;
 }
 
-.grid-tarjetas div button {
-    
+.grid-tarjetas button {
+    margin-left: 120px;
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
 }
+
 footer {
     display: flex;
     justify-content: space-around;
