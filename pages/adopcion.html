@@ -47,42 +47,57 @@
 
         <section class="grid-area">
             <!-- Formulario -->
-            <form action="/submit" method="post">
+            <form class="grid-form" action="/submit" method="post">
                 
                 <h2>Informacion de quien dara en adopcion</h2>
 
-                <label for="nombre">Tu Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
+                <div>
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
 
-                <label for="direccion">Tu Direccion:</label>
-                <input type="text" name="direccion" id="direccion">
+                <div>
+                    <label for="direccion">Tu Direccion:</label>
+                    <input type="text" name="direccion" id="direccion">
+                </div>
 
-                <label for="celular">Tu numero de contacto:</label>
-                <input type="number" name="celular" id="celular">
+                <div>
+                    <label for="celular">Tu numero de contacto:</label>
+                    <input type="number" name="celular" id="celular">
+                </div>
 
-                <label for="correo">Tu correo electronico:</label>
-                <input type="email" name="correo" id="correo">
+                <div>
+                    <label for="correo">Tu correo electronico:</label>
+                    <input type="email" name="correo" id="correo">
+                </div>
 
-                <label for="motivo">Tu motivo para dar en adopcion:</label>
-                <input type="text" name="motivo" id="motivo">
+                <div>
+                    <label for="motivo">Tu motivo para dar en adopcion:</label>
+                    <input type="text" name="motivo" id="motivo">
+                </div>
 
                 <h2>Informacion de la mascota</h2>
 
-                <label for="nombre_mascota">Nombre de la mascota:</label>
-                <input type="text" name="nombre_mascota" id="nombre_mascota">
+                <div>
+                    <label for="nombre_mascota">Nombre de la mascota:</label>
+                    <input type="text" name="nombre_mascota" id="nombre_mascota">    
+                </div>
+                <div>
+                    <label for="genero_mascota">Genero de la mascota:</label>
+                    <input type="radio" name="genero_mascota" id="genero_mascota">
+                    <label for="genero_mascota">Hembra</label>
+                    <input type="radio" name="genero_mascota" id="genero_mascota">
+                    <label for="genero_mascota">Macho</label>
+                </div>
+                <div>
+                    <label for="tipo_mascota">Tipo de mascota (Ej: Perro, Gato, Ave, Etc.):</label>
+                    <input type="text" name="tipo_mascota" id="tipo_mascota">    
+                </div>
+                <div>
+                    <label for="edad_mascota">Edad de la mascota:</label>
+                    <input type="number" name="edad_mascota" id="edad_mascota">    
+                </div>
                 
-                <label for="genero_mascota">Genero de la mascota:</label>
-                <input type="radio" name="genero_mascota" id="genero_mascota">
-                <label for="genero_mascota">Hembra</label>
-                <input type="radio" name="genero_mascota" id="genero_mascota">
-                <label for="genero_mascota">Macho</label>
-
-                <label for="tipo_mascota">Tipo de mascota (Ej: Perro, Gato, Ave, Etc.):</label>
-                <input type="text" name="tipo_mascota" id="tipo_mascota">
-
-                <label for="edad_mascota">Edad de la mascota:</label>
-                <input type="number" name="edad_mascota" id="edad_mascota">
-
                 <input type="submit" value="Enviar">
             </form>
 
