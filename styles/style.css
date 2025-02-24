@@ -284,7 +284,7 @@ footer img{
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 611px) {
 
     .grid-area {
         margin: 10px;
@@ -296,5 +296,30 @@ footer img{
     }
     .grid-container img {
         width: 300px;
+    }
+
+    .grid-tarjetas {
+        display: flex;
+        padding: 0px;
+        margin: 10px;
+        border: solid red;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .grid-tarjetas div {
+        height: 420px;
+        width: 300px;
+        margin: 20px;
+    }
+    
+    .grid-tarjetas div img {
+        padding: 10px 0px 0px 15px;
+        height: 200px;
+        width: 280px;
+    }
+    
+    .grid-tarjetas button {
+        margin-left: 95px;  
     }
 }
