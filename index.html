@@ -11,27 +11,31 @@
 <body>
     <header class="header">
         <img class="logo" src="./assets/img/logo.jpg" alt="logo">
-        <!-- Barra de Navegacion -->
+        
+        <!-- Botón de menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        
+        <!-- Barra de Navegación -->
         <nav class="navegacion">
-            <ul>
-                <li class="nav-li">
-                    <a class="nav-link" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="./pages/adoptar.html">Adoptar</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="./pages/adopcion.html">Dar en adopcion</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="./pages/cuidados.html">Cuidados</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+          <ul>
+            <li class="nav-li">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link" href="./pages/adoptar.html">Adoptar</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link" href="./pages/adopcion.html">Dar en adopcion</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link" href="./pages/cuidados.html">Cuidados</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <main class="grid-container">
         <article class="grid-area">
@@ -74,7 +78,7 @@
         </section>
              
         
-        <section class="grid-area">
+        <section class="grid-area2">
             <div>
                 <h2>Importancia de ser responsable por la vida de tu mascota</h2>
                 <p>El cuidado adecuado de una mascota es esencial para garantizar su bienestar y calidad de vida. La alimentación balanceada proporciona la energía y nutrientes necesarios para su salud, mientras que las vacunas protegen contra enfermedades graves. Los chequeos médicos periódicos permiten detectar problemas de salud a tiempo, y mantener una buena higiene, tanto en su entorno como en su propio cuerpo, previene infecciones y mejora su confort. En conjunto, estos cuidados contribuyen a una vida larga, saludable y feliz para tu mascota.</p>
@@ -116,5 +120,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Selecciona el botón y la navegación
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.navegacion');
+      
+        // Alterna la clase 'active' al hacer clic
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
