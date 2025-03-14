@@ -1,0 +1,137 @@
+$color: green;
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", serif;
+    background-color: #FDF7F2;
+    header {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 5px 50px 5px 50px;
+        background-color: #FF914D;
+        img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            border: solid 2px gray;
+        }
+
+        button {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .grid-container {
+            display: grid;
+            grid-column: 1fr;
+            gap: 12px;
+            align-items: center;
+        }
+        article {
+            .grid-area {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 10px;
+                background-color: #FFE8D6;
+                border: 1px solid red;
+            }
+
+            div {
+                padding: 20px;
+                img {
+                    height: 500px;
+                    width: 500px;
+                    border-radius: 10px;
+                }
+
+                h1 {
+
+                }
+
+                p{
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        section {
+            padding: 10px;
+            div {
+                div {
+                    div {
+                        img {
+                            height: 600px;
+                        }
+                    }
+                }
+                button {
+                    span {
+
+                    }
+                }
+            }
+        }
+
+        section {
+
+            div {
+                h2 {
+
+                }
+                p {
+
+                }
+                img {
+
+                }
+            }
+        }
+    }
+
+    footer {
+        div {
+            img {
+
+            }
+
+            div {
+                img {
+
+                }
+
+                p {
+
+                }
+
+            }
+            p {
+
+            }
+        }
+    }
+}
