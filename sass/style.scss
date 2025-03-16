@@ -1,9 +1,13 @@
 $color: green;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
+}
 
+
+body {
     font-family: "Open Sans", serif;
     background-color: #FDF7F2;
     header {
@@ -19,13 +23,6 @@ body {
             border-radius: 50px;
             border: solid 2px gray;
         }
-
-        button {
-            .menu-toggle {
-                display: none;
-            }
-        }
-
         nav {
             ul {
                 display: flex;
@@ -34,104 +31,304 @@ body {
                 justify-content: space-between;
                 li {
                     list-style: none;
-                    a {
-                        text-decoration: none;
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-
-    main {
-        .grid-container {
-            display: grid;
-            grid-column: 1fr;
-            gap: 12px;
-            align-items: center;
-        }
-        article {
-            .grid-area {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                margin: 10px;
-                background-color: #FFE8D6;
-                border: 1px solid red;
-            }
-
-            div {
-                padding: 20px;
-                img {
-                    height: 500px;
-                    width: 500px;
-                    border-radius: 10px;
-                }
-
-                h1 {
-
-                }
-
-                p{
-                    padding-top: 20px;
-                }
-            }
-        }
-
-        section {
-            padding: 10px;
-            div {
-                div {
-                    div {
-                        img {
-                            height: 600px;
-                        }
-                    }
-                }
-                button {
-                    span {
-
-                    }
-                }
-            }
-        }
-
-        section {
-
-            div {
-                h2 {
-
-                }
-                p {
-
-                }
-                img {
-
                 }
             }
         }
     }
 
     footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        align-items: center;
         div {
             img {
-
-            }
-
-            div {
-                img {
-
-                }
-
-                p {
-
-                }
-
-            }
-            p {
-
+                width: 350px;
+                height: 350px;
+                border-radius: 10px;
             }
         }
     }
+}
+
+.navegacion {
+    ul {
+        li {
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-column: 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.grid-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFE8D6;
+    border: 1px solid red;
+    div {
+        padding: 20px;
+        img {
+            height: 500px;
+            width: 500px;
+            border-radius: 10px;
+        }
+        p {
+            padding-top: 20px;
+        }
+    }
+}
+
+.grid-carousel {
+    padding: 10px;
+    div {
+        div {
+            div {
+                img {
+                    height: 600px;
+                }
+            }
+        }
+    }
+}
+
+.grid-area2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFE8D6;
+    border: 1px solid red;
+
+    div {
+        padding: 20px;
+        p {
+            padding-top: 20px;
+        }
+        img {
+            height: 500px;
+            width: 500px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.grid-tarjetas {
+    background-color: #FFE8D6;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border: solid red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    div {
+        background-color: #D7CCC8;
+        border: solid grey;
+        height: 420px;
+        width: 350px;
+        margin: 20px;
+        img {
+            padding: 10px 0px 0px 75px;
+        }
+        h2 {
+            margin: 10px 0px 10px 5px;
+            text-align: justify;
+            font-size: 20px;
+        }
+        p {
+            text-align: justify;
+            margin: 0px 0px 0px 10px;
+        }
+        button {
+            margin-left: 120px;
+            margin-top: 15px;
+            border-radius: 10px;
+            height: 35px;
+            width: 100px;
+        }
+    }
+}
+
+.grid-form {
+    width: 100%;
+    margin: 50px;
+    background-color: #D7CCC8;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    h2 {
+        margin-top: 0;
+        color: #333;
+        font-size: 1.5em;
+        border-bottom: 2px solid #FFE8D6;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    div {
+        margin-bottom: 15px;
+        padding: 0px;
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+    
+        input[type="text"], 
+        input[type="email"], 
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        input[type="radio"] {
+            margin-left: 5;
+        }
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #45a049;
+        }
+    }
+}
+
+.footer-contacto {
+    div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        img {
+            padding-right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .grid-area {
+        flex-direction: column-reverse;
+    }
+
+    .grid-area2 {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 940px) {
+    .navegacion {
+        ul {
+            display: none;
+            flex-direction: column;
+        }
+      
+    }
+  
+    .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    
+    .navegacion.active ul {
+      display: flex;
+    }
+}
+
+@media (max-width: 611px) {
+
+    .grid-area {
+        margin: 10px;
+        padding: 0px;
+        div {
+            img {
+                width: 300px;
+            }
+        }
+
+        img {
+            width: 300px;
+        }
+    }
+    .grid-area2 {
+        margin: 10px;
+        padding: 0px;
+        div {
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+
+    .grid-tarjetas {
+        display: flex;
+        padding: 0px;
+        margin: 10px;
+        border: solid red;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .grid-tarjetas div {
+        height: 420px;
+        width: 300px;
+        margin: 20px;
+    }
+    
+    .grid-tarjetas div img {
+        padding: 10px 0px 0px 15px;
+        height: 200px;
+        width: 280px;
+    }
+    
+    .grid-tarjetas button {
+        margin-left: 95px;  
+    }
+}
+
+//MIXINS
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
