@@ -34,8 +34,11 @@ body header nav ul li {
 body footer {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
   align-items: center;
+  background-color: #FFE8D6;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
 }
 body footer div img {
   width: 350px;
@@ -78,6 +81,11 @@ body footer div img {
 }
 .grid-area div p {
   padding-top: 20px;
+}
+.grid-area img {
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
 }
 
 .grid-carousel {
@@ -125,7 +133,9 @@ body footer div img {
   margin: 20px;
 }
 .grid-tarjetas div img {
-  padding: 10px 0px 0px 75px;
+  margin: 10px 0px 0px 75px;
+  width: 200px;
+  height: 200px;
 }
 .grid-tarjetas div h2 {
   margin: 10px 0px 10px 5px;
@@ -267,7 +277,7 @@ body footer div img {
     margin: 20px;
   }
   .grid-tarjetas div img {
-    padding: 10px 0px 0px 15px;
+    margin: 10px 0px 0px 15px;
     height: 200px;
     width: 280px;
   }

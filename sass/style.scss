@@ -39,8 +39,11 @@ body {
     footer {
         display: flex;
         justify-content: space-around;
-        padding: 20px;
         align-items: center;
+        background-color: #FFE8D6;
+        border: 1px solid red;
+        padding: 10px;
+        margin: 10px;
         div {
             img {
                 width: 350px;
@@ -91,6 +94,11 @@ body {
         p {
             padding-top: 20px;
         }
+    }
+    img {
+        height: 500px;
+        width: 500px;
+        border-radius: 10px;
     }
 }
 
@@ -144,7 +152,9 @@ body {
         width: 350px;
         margin: 20px;
         img {
-            padding: 10px 0px 0px 75px;
+            margin: 10px 0px 0px 75px;
+            width: 200px;
+            height: 200px;
         }
         h2 {
             margin: 10px 0px 10px 5px;
@@ -285,7 +295,7 @@ body {
         }
 
         img {
-            width: 300px;
+            width: 300px;    
         }
     }
     .grid-area2 {
@@ -315,7 +325,7 @@ body {
     }
     
     .grid-tarjetas div img {
-        padding: 10px 0px 0px 15px;
+        margin: 10px 0px 0px 15px;
         height: 200px;
         width: 280px;
     }
