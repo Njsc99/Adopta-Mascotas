@@ -1,5 +1,41 @@
 @import 'maps';
 
+@media (max-width: 1470px) {
+    .grid-area {
+        div {
+            img {
+                @include medidas(400px, 400px);
+            }
+            iframe {
+                @include medidas(400px, 400px);
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1272px) {
+    .grid-area {
+        div {
+            img {
+                @include medidas(350px, 350px);
+            }
+            iframe {
+                @include medidas(350px, 350px);
+            }
+        }
+    }
+
+    .grid-carousel {
+        display: flex;
+        justify-content: center;
+        div {
+            height: 600px;
+            width: 1000px;
+        }
+    }
+}
+
 @media (max-width: 1050px) {
     .grid-area {
         flex-direction: column-reverse;
@@ -9,8 +45,22 @@
         flex-direction: column;
     }
 
+    .grid-carousel {
+        display: flex;
+        justify-content: center;
+        div {
+            height: 600px;
+            width: 940px;
+        }
+    }
+
     footer {
         flex-direction: column;
+        div {
+            img {
+                @include medidas(300px, 300px);
+            }
+        }
     }
 }
 
@@ -23,6 +73,24 @@
       
     }
   
+    .grid-carousel {
+        div {
+            height: 500px;
+            width: 750px;
+        }
+    }
+
+    .grid-tarjetas {
+        div {
+            img {
+                @include medidas(200px, 280px);
+                margin: 10px 0px 0px 35px;
+            }
+            button {
+                margin-left: 110px;
+            }
+        }
+    }
     .menu-toggle {
       display: block;
       background: none;
@@ -36,6 +104,15 @@
     }
 }
 
+@media (max-width: 800px) {
+    .grid-carousel {
+
+        div {
+            height: 300px;
+            width: 600px;
+        }
+    }
+}
 
 @media (max-width: 611px) {
 
@@ -46,12 +123,26 @@
             img {
                 width: 300px;
             }
+            iframe {
+                @include medidas(300px, 320px);
+                border-radius: 10px;
+            }
         }
 
         img {
             width: 300px;    
         }
     }
+
+    .grid-carousel {
+        display: flex;
+        justify-content: center;
+        div {
+            height: 250px;
+            width: 350px;
+        }
+    }
+
     .grid-area2 {
         margin: 10px;
         padding: 0px;
@@ -67,21 +158,17 @@
         @include flex(row, space-around, wrap);
         padding: 0px;
         margin: 10px;
-        border: solid red;
-    }
-    
-    .grid-tarjetas div {
-        @include medidas(420px, 300px);
-        margin: 20px;
-    }
-    
-    .grid-tarjetas div img {
-        @include medidas(200px, 280px);
-        margin: 10px 0px 0px 15px;
-    }
-    
-    .grid-tarjetas button {
-        margin-left: 95px;  
+        div {
+            @include medidas(420px, 300px);
+            margin: 20px;
+            img {
+                @include medidas(200px, 280px);
+                margin: 5px 0px 0px 10px;
+            }
+            button {
+                margin-left: 95px;  
+            }
+        }
     }
 }
 
