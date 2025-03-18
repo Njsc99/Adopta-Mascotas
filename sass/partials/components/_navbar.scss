@@ -1,0 +1,22 @@
+
+.navegacion {
+    ul {
+        @include flex(row, space-between, nowrap);
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    color: map-get($map: $colors, $key: secondary);
+                    transition: ease-out 0.5s;  
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.menu-toggle {
+    display: none;
+}

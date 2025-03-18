@@ -1,0 +1,5 @@
+.logo {
+    @include medidas(100px, 100px);
+    border-radius: 50px;
+    border: solid 2px gray;
+}

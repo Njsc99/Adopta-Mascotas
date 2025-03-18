@@ -8,7 +8,8 @@ body {
   font-family: "Open Sans", serif;
   background-color: #FDF7F2;
 }
-body header {
+
+header {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
@@ -16,39 +17,31 @@ body header {
   padding: 5px 50px 5px 50px;
   background-color: #FF914D;
 }
-body header img {
+
+.logo {
   height: 100px;
   width: 100px;
   border-radius: 50px;
   border: solid 2px gray;
 }
-body header nav ul {
+
+.navegacion ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
-body header nav ul li {
+.navegacion ul li {
   list-style: none;
 }
-body footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #FFE8D6;
-  border: 1px solid red;
-  padding: 10px;
-  margin: 10px;
-}
-body footer div img {
-  width: 350px;
-  height: 350px;
-  border-radius: 10px;
-}
-
 .navegacion ul li a {
   text-decoration: none;
   color: white;
+}
+.navegacion ul li a:hover {
+  color: #FFE8D6;
+  transition: ease-out 0.5s;
+  transform: scale(1.1);
 }
 
 .menu-toggle {
@@ -66,6 +59,7 @@ body footer div img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 10px;
   margin: 10px;
   background-color: #FFE8D6;
@@ -88,17 +82,11 @@ body footer div img {
   border-radius: 10px;
 }
 
-.grid-carousel {
-  padding: 10px;
-}
-.grid-carousel div div div img {
-  height: 600px;
-}
-
 .grid-area2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 10px;
   margin: 10px;
   background-color: #FFE8D6;
@@ -116,14 +104,22 @@ body footer div img {
   border-radius: 10px;
 }
 
+.grid-carousel {
+  padding: 10px;
+}
+.grid-carousel div div div img {
+  height: 600px;
+}
+
 .grid-tarjetas {
   background-color: #FFE8D6;
   display: flex;
-  padding: 10px;
-  margin: 10px;
-  border: solid red;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
 }
 .grid-tarjetas div {
   background-color: #D7CCC8;
@@ -133,9 +129,9 @@ body footer div img {
   margin: 20px;
 }
 .grid-tarjetas div img {
-  margin: 10px 0px 0px 75px;
-  width: 200px;
   height: 200px;
+  width: 200px;
+  margin: 10px 0px 0px 75px;
 }
 .grid-tarjetas div h2 {
   margin: 10px 0px 10px 5px;
@@ -147,11 +143,16 @@ body footer div img {
   margin: 0px 0px 0px 10px;
 }
 .grid-tarjetas div button {
+  height: 35px;
+  width: 100px;
   margin-left: 120px;
   margin-top: 15px;
   border-radius: 10px;
-  height: 35px;
-  width: 100px;
+}
+.grid-tarjetas div button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+  transition: ease-out 0.5s;
 }
 
 .grid-form {
@@ -205,6 +206,22 @@ body footer div img {
   background-color: #45a049;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #FFE8D6;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+footer div img {
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+}
+
 .footer-contacto div {
   display: flex;
   justify-content: flex-start;
@@ -212,9 +229,9 @@ body footer div img {
   flex-wrap: nowrap;
 }
 .footer-contacto div img {
-  padding-right: 20px;
-  width: 50px;
   height: 50px;
+  width: 50px;
+  padding-right: 20px;
   border-radius: 10px;
 }
 
@@ -265,11 +282,12 @@ body footer div img {
   }
   .grid-tarjetas {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 0px;
     margin: 10px;
     border: solid red;
-    justify-content: space-around;
-    flex-wrap: wrap;
   }
   .grid-tarjetas div {
     height: 420px;
@@ -277,9 +295,9 @@ body footer div img {
     margin: 20px;
   }
   .grid-tarjetas div img {
-    margin: 10px 0px 0px 15px;
     height: 200px;
     width: 280px;
+    margin: 10px 0px 0px 15px;
   }
   .grid-tarjetas button {
     margin-left: 95px;

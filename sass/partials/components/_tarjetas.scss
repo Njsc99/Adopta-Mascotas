@@ -1,0 +1,37 @@
+.grid-tarjetas {
+    background-color: map-get($map: $colors, $key:secondary );
+    @include flex(row, space-around, wrap);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid red;
+    div {
+        background-color: #D7CCC8;
+        border: solid grey;
+        @include medidas(420px, 350px);
+        margin: 20px;
+        img {
+            @include medidas(200px, 200px);
+            margin: 10px 0px 0px 75px;
+        }
+        h2 {
+            margin: 10px 0px 10px 5px;
+            text-align: justify;
+            font-size: 20px;
+        }
+        p {
+            text-align: justify;
+            margin: 0px 0px 0px 10px;
+        }
+        button {
+            @include medidas(35px, 100px);
+            margin-left: 120px;
+            margin-top: 15px;
+            border-radius: 10px;
+            &:hover {
+                background-color: #45a049;
+                transform: scale(1.1);
+                transition: ease-out 0.5s;
+            }
+        }
+    }
+}

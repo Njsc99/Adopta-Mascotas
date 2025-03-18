@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-column: 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.grid-area {
+    @include flex-align(space-between, center, nowrap);
+    padding: 10px;
+    margin: 10px;
+    background-color: map-get($map: $colors, $key: secondary);
+    border: 1px solid red;
+    div {
+        padding: 20px;
+        img {
+            @include medidas(500px, 500px);
+            border-radius: 10px;
+        }
+        p {
+            padding-top: 20px;
+        }
+    }
+    img {
+        @include medidas(500px, 500px);
+        border-radius: 10px;
+    }
+}
+
+.grid-area2 {
+    @include flex-align(space-between, center, nowrap);
+    padding: 10px;
+    margin: 10px;
+    background-color: map-get($map: $colors, $key: secondary);
+    border: 1px solid red;
+
+    div {
+        padding: 20px;
+        p {
+            padding-top: 20px;
+        }
+        img {
+            @include medidas(500px, 500px);
+            border-radius: 10px;
+        }
+    }
+}
+
