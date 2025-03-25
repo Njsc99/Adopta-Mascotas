@@ -40,12 +40,17 @@ header {
 }
 .navegacion ul li a:hover {
   color: #FFE8D6;
-  transition: ease-out 0.5s;
-  transform: scale(1.1);
 }
 
 .menu-toggle {
   display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
 }
 
 .grid-container {
@@ -293,11 +298,26 @@ footer div img {
     width: 300px;
   }
 }
-@media (max-width: 940px) {
+@media (max-width: 965px) {
+  .menu-icon {
+    display: block;
+  }
   .navegacion ul {
     display: none;
     flex-direction: column;
+    width: 100%;
+    background-color: #FF914D;
+    position: flex;
   }
+  .menu-toggle:checked + .menu-icon + .navegacion ul {
+    display: flex;
+  }
+  .navegacion ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 940px) {
   .grid-carousel div {
     height: 500px;
     width: 750px;
@@ -309,16 +329,6 @@ footer div img {
   }
   .grid-tarjetas div button {
     margin-left: 110px;
-  }
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  .navegacion.active ul {
-    display: flex;
   }
 }
 @media (max-width: 800px) {

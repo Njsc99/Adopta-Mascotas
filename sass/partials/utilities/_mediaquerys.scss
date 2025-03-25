@@ -64,15 +64,31 @@
     }
 }
 
-@media (max-width: 940px) {
-    .navegacion {
-        ul {
-            display: none;
-            flex-direction: column;
-        }
-      
+@media (max-width: 965px) {
+    .menu-icon {
+        display: block;
     }
-  
+
+    .navegacion ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: map-get($map: $colors, $key: primary);
+        position: flex;
+    }
+
+    .menu-toggle:checked + .menu-icon + .navegacion ul {
+        display: flex;
+    }
+
+    .navegacion ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 940px) {
+
     .grid-carousel {
         div {
             height: 500px;
@@ -90,18 +106,8 @@
                 margin-left: 110px;
             }
         }
-    }
-    .menu-toggle {
-      display: block;
-      background: none;
-      border: none;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    
-    .navegacion.active ul {
-      display: flex;
-    }
+    }    
+
 }
 
 @media (max-width: 800px) {
