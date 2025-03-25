@@ -1,24 +1,15 @@
 footer {
     @include flex-align(space-around, center, wrap);
-    background-color: map-get($map: $colors, $key:secondary );
-    border: 1px solid red;
-    padding: 10px;
-    margin: 10px;
-    div {
-        img {
-            @include medidas(350px, 350px);
-            border-radius: 10px;
-        }
-    }
-}
+    background-color: map-get($map: $colors, $key:primary );
+    border: 1px solid ;
 
-.footer-contacto {
+    p {
+        margin: 0px;
+    }
+
     div {
-        @include flex-align(flex-start, center, nowrap);
         img {
             @include medidas(50px, 50px);
-            padding-right: 20px;
-            border-radius: 10px;
         }
     }
 }

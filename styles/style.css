@@ -19,12 +19,15 @@ header {
 }
 
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   border-radius: 50px;
   border: solid 2px gray;
 }
 
+.navegacion {
+  align-items: center;
+}
 .navegacion ul {
   display: flex;
   flex-direction: row;
@@ -223,28 +226,15 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #FFE8D6;
-  border: 1px solid red;
-  padding: 10px;
-  margin: 10px;
+  background-color: #FF914D;
+  border: 1px solid;
+}
+footer p {
+  margin: 0px;
 }
 footer div img {
-  height: 350px;
-  width: 350px;
-  border-radius: 10px;
-}
-
-.footer-contacto div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.footer-contacto div img {
   height: 50px;
   width: 50px;
-  padding-right: 20px;
-  border-radius: 10px;
 }
 
 @media (max-width: 1470px) {

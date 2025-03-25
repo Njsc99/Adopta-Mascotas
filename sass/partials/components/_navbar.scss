@@ -1,5 +1,6 @@
 
 .navegacion {
+    align-items: center;
     ul {
         @include flex(row, space-between, nowrap);
         li {
