@@ -3,8 +3,30 @@
     display: flex;
     justify-content: center;
     div {
-        border-radius: 10px;
-        height: 600px;
-        width: 1080px;
+        div {
+            border-radius: 10px;
+            height: 600px;
+            width: 1080px;
+        }
+    }
+}
+
+.carousel-add {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    border: 1px solid red;
+    width: 100%; 
+    background: url('../../../assets/img/ventaja-desventaja.jpg');
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        
+        color: map-get($map: $colors, $key: primary);
+        text-shadow: 
+        -1px -1px 0 #000, /* Sombra superior izquierda */
+        1px -1px 0 #000,  /* Sombra superior derecha */
+        -1px 1px 0 #000,  /* Sombra inferior izquierda */
+        1px 1px 0 #000; 
     }
 }

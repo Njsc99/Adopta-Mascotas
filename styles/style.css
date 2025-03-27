@@ -112,14 +112,70 @@ header {
   border-radius: 10px;
 }
 
+.img-background {
+  background-image: url("../../../assets/img/lobby.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-background h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.img-background p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.img-background button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #FF914D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.img-background button:hover {
+  background-color: #FFE8D6;
+}
+.img-background button a {
+  text-decoration: none;
+  color: white;
+}
+
 .grid-carousel {
   display: flex;
   justify-content: center;
 }
-.grid-carousel div {
+.grid-carousel div div {
   border-radius: 10px;
   height: 600px;
   width: 1080px;
+}
+
+.carousel-add {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  border: 1px solid red;
+  width: 100%;
+  background: url("../../../assets/img/ventaja-desventaja.jpg");
+}
+.carousel-add h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #FF914D;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .grid-tarjetas {
