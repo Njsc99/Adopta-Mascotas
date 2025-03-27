@@ -113,7 +113,7 @@ header {
 }
 
 .img-background {
-  background-image: url("../../../assets/img/lobby.jpg");
+  background-image: url("../assets/img/lobby.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@ header {
   align-items: top;
   border: 1px solid red;
   width: 100%;
-  background-image: url("../../../assets/img/ventaja-desventaja.jpg");
+  background-image: url("../assets/img/ventaja-desventaja.jpg");
 }
 .carousel-add h2 {
   font-size: 2rem;
