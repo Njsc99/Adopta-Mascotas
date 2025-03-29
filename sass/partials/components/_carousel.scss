@@ -13,20 +13,32 @@
 
 .carousel-add {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: top;
     border: 1px solid red;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 100%; 
     background-image: url('../assets/img/ventaja-desventaja.jpg');
     h2{
-        font-size: 2rem;
+        text-decoration: underline;
+        font-size: 2.5rem;
         text-align: center;
-        
         color: map-get($map: $colors, $key: primary);
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-shadow: 
         -1px -1px 0 #000, /* Sombra superior izquierda */
         1px -1px 0 #000,  /* Sombra superior derecha */
         -1px 1px 0 #000,  /* Sombra inferior izquierda */
         1px 1px 0 #000; 
+    }
+    ol {
+        li {
+            padding: 10px;
+            font-size: 1.5rem;
+        }
     }
 }
