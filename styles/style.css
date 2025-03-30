@@ -10,6 +10,9 @@ body {
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
@@ -54,6 +57,10 @@ header {
   cursor: pointer;
   font-size: 24px;
   color: white;
+}
+
+main {
+  padding-top: 100px;
 }
 
 .grid-container {
@@ -104,6 +111,12 @@ header {
   padding-bottom: 20px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+.grid-area div ul li {
+  padding: 10px;
+  font-size: 1.25rem;
+  text-align: justify;
+  list-style: square;
+}
 .grid-area div div {
   display: flex;
   justify-content: flex-start;
@@ -114,11 +127,13 @@ header {
 .grid-area div div p {
   font-size: 1.5rem;
   padding-right: 10px;
+  text-align: justify;
 }
 .grid-area div div img {
   height: 450px;
   width: 450px;
   border-radius: 10px;
+  margin-left: 20px;
 }
 .grid-area img {
   height: 500px;
@@ -139,8 +154,19 @@ header {
 .grid-area2 div {
   padding: 20px;
 }
+.grid-area2 div h2 {
+  text-decoration: underline;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #FF914D;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 .grid-area2 div p {
   padding-top: 20px;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 .grid-area2 div img {
   height: 500px;
@@ -222,7 +248,7 @@ header {
 }
 .carousel-add ol li {
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .grid-tarjetas {

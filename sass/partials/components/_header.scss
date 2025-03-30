@@ -1,4 +1,7 @@
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
