@@ -1,13 +1,43 @@
-@import 'maps';
+@media (max-width: 1900px) {
+    #grid-area-form {
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1620px) {
+    .grid-carousel {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+}
 
 @media (max-width: 1470px) {
     .grid-area {
         div {
+            h1 {
+                font-size: 1.9rem;
+            }
+            h2 {
+                font-size: 1.9rem;
+            }
             img {
                 @include medidas(400px, 400px);
             }
             iframe {
                 @include medidas(400px, 400px);
+            }
+        }
+    }
+
+    .grid-area2 {
+        div {
+            h2 {
+                font-size: 1.9rem;
             }
         }
     }
@@ -25,13 +55,38 @@
             }
         }
     }
+}
+
+@media (max-width: 1130px) {
+    .grid-area {
+        div {
+            p {
+                font-size: 1.2rem;
+            }
+            img {
+                @include medidas(320px, 320px);
+            }
+            div {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
 
     .grid-carousel {
-        display: flex;
-        justify-content: center;
         div {
-            height: 600px;
-            width: 1000px;
+            div {
+                @include medidas(500px, 900px);
+            }
+        }
+    }
+
+    .grid-area2 {
+        div {
+            p {
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -43,22 +98,29 @@
 
     .grid-area2 {
         flex-direction: column;
+        div {
+            img {
+                @include medidas(300px, 300px);
+            }
+        }
     }
 
     .grid-carousel {
         display: flex;
         justify-content: center;
         div {
-            height: 600px;
-            width: 940px;
+            div{
+                @include medidas(450px, 850px);
+            }
         }
     }
 
-    footer {
+    #grid-area-form {
         flex-direction: column;
         div {
-            img {
-                @include medidas(300px, 300px);
+            div {
+                display: flex;
+                flex-direction: column;
             }
         }
     }
@@ -91,8 +153,9 @@
 
     .grid-carousel {
         div {
-            height: 500px;
-            width: 750px;
+            div {
+                @include medidas(500px, 750px);
+            }
         }
     }
 
@@ -114,9 +177,14 @@
     .grid-carousel {
 
         div {
-            height: 300px;
-            width: 600px;
+            div {
+                @include medidas(300px, 600px);
+            }
         }
+    }
+
+    .grid-form {
+        width: 530px;
     }
 }
 
@@ -133,10 +201,15 @@
                 @include medidas(300px, 320px);
                 border-radius: 10px;
             }
+            div {
+                img {
+                    @include medidas(300px, 300px);
+                }
+            }
         }
 
         img {
-            width: 300px;    
+            @include medidas(300px, 300px);
         }
     }
 
@@ -144,14 +217,14 @@
         display: flex;
         justify-content: center;
         div {
-            height: 250px;
-            width: 350px;
+            div {
+                @include medidas(350px, 450px);
+            }
         }
     }
 
     .grid-area2 {
-        margin: 10px;
-        padding: 0px;
+
         div {
             img {
                 width: 300px;
@@ -174,6 +247,67 @@
             button {
                 margin-left: 95px;  
             }
+        }
+    }
+
+    .grid-form {
+        width: 420px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .img-background {
+        h1 {
+            font-size: 2rem;
+            width: 375px;
+        }
+        p {
+            font-size: 1.2rem;
+            width: 375px;
+        }
+    }
+    .grid-area {
+        div {
+            img {
+                @include medidas(250px, 250px);
+            }
+            div {
+                img {
+                    @include medidas(250px, 250px);
+                }
+            }
+        }
+    }
+    .carousel-add {
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .grid-carousel {
+        div {
+            div {
+                @include medidas(180px, 320px);
+            }
+        }
+    }
+
+    .grid-area2 {
+        div {
+            img {
+                @include medidas(250px, 250px);
+            }
+        }
+    }
+
+    .grid-form {
+        width: 350px;
+        margin: 0px;
+    }
+    footer { 
+        p {
+            font-size: 13px;
         }
     }
 }

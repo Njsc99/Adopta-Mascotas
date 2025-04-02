@@ -237,7 +237,7 @@ main {
   width: 100%;
   background-image: url("../assets/img/ventaja-desventaja.jpg");
 }
-.carousel-add h2 {
+.carousel-add h3 {
   text-decoration: underline;
   font-size: 2.5rem;
   text-align: center;
@@ -366,7 +366,29 @@ footer div img {
   width: 50px;
 }
 
+@media (max-width: 1900px) {
+  #grid-area-form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #grid-area-form div {
+    width: 100%;
+  }
+}
+@media (max-width: 1620px) {
+  .grid-carousel {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+}
 @media (max-width: 1470px) {
+  .grid-area div h1 {
+    font-size: 1.9rem;
+  }
+  .grid-area div h2 {
+    font-size: 1.9rem;
+  }
   .grid-area div img {
     height: 400px;
     width: 400px;
@@ -374,6 +396,9 @@ footer div img {
   .grid-area div iframe {
     height: 400px;
     width: 400px;
+  }
+  .grid-area2 div h2 {
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 1272px) {
@@ -385,13 +410,24 @@ footer div img {
     height: 350px;
     width: 350px;
   }
-  .grid-carousel {
-    display: flex;
-    justify-content: center;
+}
+@media (max-width: 1130px) {
+  .grid-area div p {
+    font-size: 1.2rem;
   }
-  .grid-carousel div {
-    height: 600px;
-    width: 1000px;
+  .grid-area div img {
+    height: 320px;
+    width: 320px;
+  }
+  .grid-area div div p {
+    font-size: 1.2rem;
+  }
+  .grid-carousel div div {
+    height: 500px;
+    width: 900px;
+  }
+  .grid-area2 div p {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 1050px) {
@@ -401,20 +437,24 @@ footer div img {
   .grid-area2 {
     flex-direction: column;
   }
+  .grid-area2 div img {
+    height: 300px;
+    width: 300px;
+  }
   .grid-carousel {
     display: flex;
     justify-content: center;
   }
-  .grid-carousel div {
-    height: 600px;
-    width: 940px;
+  .grid-carousel div div {
+    height: 450px;
+    width: 850px;
   }
-  footer {
+  #grid-area-form {
     flex-direction: column;
   }
-  footer div img {
-    height: 300px;
-    width: 300px;
+  #grid-area-form div div {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 965px) {
@@ -437,7 +477,7 @@ footer div img {
   }
 }
 @media (max-width: 940px) {
-  .grid-carousel div {
+  .grid-carousel div div {
     height: 500px;
     width: 750px;
   }
@@ -451,9 +491,12 @@ footer div img {
   }
 }
 @media (max-width: 800px) {
-  .grid-carousel div {
+  .grid-carousel div div {
     height: 300px;
     width: 600px;
+  }
+  .grid-form {
+    width: 530px;
   }
 }
 @media (max-width: 611px) {
@@ -469,20 +512,21 @@ footer div img {
     width: 320px;
     border-radius: 10px;
   }
+  .grid-area div div img {
+    height: 300px;
+    width: 300px;
+  }
   .grid-area img {
+    height: 300px;
     width: 300px;
   }
   .grid-carousel {
     display: flex;
     justify-content: center;
   }
-  .grid-carousel div {
-    height: 250px;
-    width: 350px;
-  }
-  .grid-area2 {
-    margin: 10px;
-    padding: 0px;
+  .grid-carousel div div {
+    height: 350px;
+    width: 450px;
   }
   .grid-area2 div img {
     width: 300px;
@@ -507,6 +551,45 @@ footer div img {
   }
   .grid-tarjetas div button {
     margin-left: 95px;
+  }
+  .grid-form {
+    width: 420px;
+  }
+}
+@media (max-width: 500px) {
+  .img-background h1 {
+    font-size: 2rem;
+    width: 375px;
+  }
+  .img-background p {
+    font-size: 1.2rem;
+    width: 375px;
+  }
+  .grid-area div img {
+    height: 250px;
+    width: 250px;
+  }
+  .grid-area div div img {
+    height: 250px;
+    width: 250px;
+  }
+  .carousel-add h3 {
+    font-size: 1.5rem;
+  }
+  .grid-carousel div div {
+    height: 180px;
+    width: 320px;
+  }
+  .grid-area2 div img {
+    height: 250px;
+    width: 250px;
+  }
+  .grid-form {
+    width: 350px;
+    margin: 0px;
+  }
+  footer p {
+    font-size: 13px;
   }
 }
 
