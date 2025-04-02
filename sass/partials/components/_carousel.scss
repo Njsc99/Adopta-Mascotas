@@ -5,8 +5,7 @@
     div {
         div {
             border-radius: 10px;
-            height: 600px;
-            width: 1080px;
+            @include medidas (600px, 1080px);
         }
     }
 }
@@ -26,7 +25,7 @@
         text-decoration: underline;
         font-size: 2.5rem;
         text-align: center;
-        color: map-get($map: $colors, $key: primary);
+        color: $primary-color;
         padding-top: 20px;
         padding-bottom: 20px;
         text-shadow: 
